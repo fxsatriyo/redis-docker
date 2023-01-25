@@ -6,7 +6,7 @@ services:
       restart: always
       command: /bin/sh -c "redis-server /usr/local/etc/redis/redis.conf"
       volumes:
-        - ./redis:/var/lib/redis/data
+        - ./redis-data:/data
         - ./redis.conf:/usr/local/etc/redis/redis.conf
       logging:
         options:
